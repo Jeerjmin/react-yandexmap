@@ -39,7 +39,9 @@ class Maps extends React.Component {
                 balloonContentLayout: this.state.layout
             }
             ))))
-
+        
+        myCollection._collectionComponent._baseArrayComponent._children[0].options._options.iconColor="red"
+        
         if (maps) {
             maps.geoObjects.add(myCollection);
             maps.setBounds(myCollection.getBounds());
